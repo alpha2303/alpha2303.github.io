@@ -1,9 +1,9 @@
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1;
-  --light-text: rgb(186, 188, 243);
-  --accent-color: rgb(22, 223, 203);
-  --base-bg-color: rgb(3, 22, 48);
+  --light-text: rgb(186, 242, 243);
+  --accent-color: rgb(22, 220, 223);
+  --base-bg-color: rgb(3, 37, 48);
   --base-hover-color: rgb(16, 51, 97);
 }
 @supports (font-variation-settings: normal) {
@@ -13,6 +13,7 @@
 }
 
 body {
-  background-color: rgb(3, 22, 48);
+  /* background-color: rgb(3, 22, 48); */
+  background-color: var(--base-bg-color);
   color: var(--light-text)
 }
