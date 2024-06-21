@@ -1,0 +1,50 @@
+.nav-toggler {
+    padding: 8px 8px;
+    background-color: rgb(22, 223, 203);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+}
+
+.nav-sidebar {
+    margin: 0;
+    transform: translateX(-300px);
+    transition: transform 0.5s ease-out, visibility 1s;
+    visibility: hidden;
+    position: fixed;
+    width: 300px;
+}
+
+.nav-sidebar.active {
+    margin: 0;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-out, visibility 1s;
+    visibility: visible;
+    background-color: rgb(3, 22, 48);
+    box-shadow: 5px 0px 5px rgb(8, 9, 9);
+    z-index: 2;
+    height: 100%;
+}
+
+.nav-close-button {
+    padding: 8px 8px;
+    background-color: rgb(22, 223, 203);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.nav-menu-icon {
+    color: rgb(3, 22, 48);
+}
+
+.nav-item {
+    list-style-type: none;
+    color: var(--light-text);
+    padding: 12px 0px;
+}

@@ -1,0 +1,16 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  --light-text: rgb(186, 188, 243);
+  --accent-color: rgb(22, 223, 203);
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+body {
+  background-color: rgb(3, 22, 48);
+  color: var(--light-text)
+}

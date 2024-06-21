@@ -1,12 +1,14 @@
+import About from "./components/about/About"
+import NavBar from "./components/navbar/Navbar"
 
-
-function App() {
+export default function App() {
 
   return (
     <>
-    <p>Hello World!</p>
+    <div className="container">
+      <NavBar />
+      <About />
+    </div>
     </>
   )
 }
-
-export default App
