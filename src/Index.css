@@ -3,6 +3,8 @@
   font-feature-settings: "liga" 1, "calt" 1;
   --light-text: rgb(186, 188, 243);
   --accent-color: rgb(22, 223, 203);
+  --base-bg-color: rgb(3, 22, 48);
+  --base-hover-color: rgb(16, 51, 97);
 }
 @supports (font-variation-settings: normal) {
   :root {

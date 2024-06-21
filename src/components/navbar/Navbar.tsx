@@ -9,23 +9,11 @@ export default function NavBar() {
   return (
     <>
       <div className="nav-toggler" onClick={() => setToggleNav(!toggleNav)}>
-        <span>
-          <MenuIcon />
-        </span>
+        <span>{toggleNav ? <CloseIcon /> : <MenuIcon />}</span>
       </div>
       <nav className={`nav-sidebar ${toggleNav ? "active" : null}`}>
         <div className={`nav-panel`}>
-          <ul>
-            <li className="nav-item">
-              <div
-                className="nav-close-button"
-                onClick={() => setToggleNav(!toggleNav)}
-              >
-                <span>
-                  <CloseIcon />
-                </span>
-              </div>
-            </li>
+          <ul className="nav-item-list">
             <li className="nav-item">
               <a href="#About">About</a>
             </li>
