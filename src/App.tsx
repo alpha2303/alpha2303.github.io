@@ -1,7 +1,7 @@
 import About from "./components/about/About";
 import NavBar from "./components/navbar/Navbar";
 import "./App.css";
-import Intro from "./components/Intro";
+import Intro from "./components/intro/Intro";
 
 export default function App() {
   return (

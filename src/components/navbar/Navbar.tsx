@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
-import MenuIcon from "./MenuIcon";
-import CloseIcon from "./CloseIcon";
+import MenuIcon from "../../assets/icons/MenuIcon";
+import CloseIcon from "../../assets/icons/CloseIcon";
 
 export default function NavBar() {
   const [toggleNav, setToggleNav] = useState(false);

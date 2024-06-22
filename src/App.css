@@ -7,26 +7,6 @@
     position: absolute;
 }
 
-.intro-container {
-    display: flex;
-    flex-basis: 20%;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 50px 50px;
-}
-
-.intro-desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    h1, h3 {
-        margin: 0;
-        padding: 10px 0px;
-    }
-}
-
 .main-container {
     display: flex;
     flex-basis: 80%;
