@@ -21,7 +21,6 @@
 }
 
 .nav-sidebar {
-  margin: 0;
   transform: translateX(-300px);
   transition: transform 1s ease, visibility 1s;
   visibility: hidden;
@@ -33,6 +32,8 @@
   z-index: 1;
   height: 100%;
   box-shadow: 5px 0px 5px rgb(8, 9, 9);
+  border: 2px dashed var(--accent-color);
+  border-radius: 10px;
 }
 
 .nav-sidebar.active {

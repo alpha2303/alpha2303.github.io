@@ -1,14 +1,18 @@
-import About from "./components/about/About"
-import NavBar from "./components/navbar/Navbar"
+import About from "./components/about/About";
+import NavBar from "./components/navbar/Navbar";
+import "./App.css";
+import Intro from "./components/Intro";
 
 export default function App() {
-
   return (
     <>
-    <div className="container">
       <NavBar />
-      <About />
-    </div>
+      <div className="container">
+        <Intro />
+        <div className="main-container">
+          <About />
+        </div>
+      </div>
     </>
-  )
+  );
 }
