@@ -14,7 +14,7 @@ export default function ExpCard(props: ExpCardProps) {
         <span className="exp-duration">
           {exp.yearFrom} - {exp.yearTo}
         </span>
-        <div>
+        <div className="exp-desc">
           <h2>{exp.title}</h2>
           <h3>
             {exp.company} | {exp.location}

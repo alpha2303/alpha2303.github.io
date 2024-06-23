@@ -15,19 +15,19 @@ export default function NavBar() {
         <div className={`nav-panel`}>
           <ul className="nav-item-list">
             <li className="nav-item">
-              <a href="#About">About</a>
+              <a href="#about">About</a>
             </li>
             <li className="nav-item">
-              <a href="#Experience">Experience</a>
+              <a href="#experience">Experience</a>
             </li>
             <li className="nav-item">
-              <a href="#Contact">Contact</a>
+              <a href="#education">Education</a>
             </li>
             <li className="nav-item">
-              <a href="#Contact">Education</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="nav-item">
-              <a href="#Contact">Projects</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
