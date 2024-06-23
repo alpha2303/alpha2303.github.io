@@ -1,6 +1,6 @@
-import "./Intro.css";
-import LinkedInIcon from "../../assets/icons/LinkedInIcon";
-import GithubIcon from "../../assets/icons/GithubIcon";
+import "./IntroStyles.css";
+import LinkedInIcon from "../../icons/LinkedInIcon";
+import GithubIcon from "../../icons/GithubIcon";
 
 export default function About() {
   return (

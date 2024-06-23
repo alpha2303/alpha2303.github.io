@@ -1,5 +1,5 @@
-import "./About.css";
-import content from "../../../content.json";
+import "./AboutStyles.css";
+import { about_section } from "../../../content";
 
 export default function About() {
   return (
@@ -8,7 +8,7 @@ export default function About() {
         <section className="about-section">
           <h3>About Me</h3>
           <p>
-            {content["about-section"]}
+            {about_section}
           </p>
         </section>
       </div>

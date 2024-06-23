@@ -1,5 +1,5 @@
-import IconProps from "../../types/Icon";
-import './icon.css';
+import IconProps from "../types/Icon";
+import './iconStyles.css';
 
 /*
     Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com 

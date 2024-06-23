@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
-import MenuIcon from "../../assets/icons/MenuIcon";
-import CloseIcon from "../../assets/icons/CloseIcon";
+import MenuIcon from "../../icons/MenuIcon";
+import CloseIcon from "../../icons/CloseIcon";
 
 export default function NavBar() {
   const [toggleNav, setToggleNav] = useState(false);
@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <>
       <div className="nav-toggler" onClick={() => setToggleNav(!toggleNav)}>
-        <span>{toggleNav ? <CloseIcon /> : <MenuIcon />}</span>
+        <span>{toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}</span>
       </div>
       <nav className={`nav-sidebar ${toggleNav ? "active" : null}`}>
         <div className={`nav-panel`}>
@@ -22,6 +22,12 @@ export default function NavBar() {
             </li>
             <li className="nav-item">
               <a href="#Contact">Contact</a>
+            </li>
+            <li className="nav-item">
+              <a href="#Contact">Education</a>
+            </li>
+            <li className="nav-item">
+              <a href="#Contact">Projects</a>
             </li>
           </ul>
         </div>

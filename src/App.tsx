@@ -1,7 +1,8 @@
 import About from "./components/about/About";
 import NavBar from "./components/navbar/Navbar";
-import "./App.css";
+import "./AppStyles.css";
 import Intro from "./components/intro/Intro";
+import Experiences from "./components/experience/Experiences";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Intro />
         <div className="main-container">
           <About />
+          <Experiences />
         </div>
       </div>
     </>
