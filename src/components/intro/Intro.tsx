@@ -1,6 +1,7 @@
 import "./IntroStyles.css";
 import LinkedInIcon from "../../icons/LinkedInIcon";
 import GithubIcon from "../../icons/GithubIcon";
+import MailIcon from "../../icons/MailIcon";
 
 export default function About() {
   return (
@@ -18,6 +19,11 @@ export default function About() {
             <li>
               <a target="__blank" href="https://github.com/alpha2303">
                 <GithubIcon isDark={true} />
+              </a>
+            </li>
+            <li>
+              <a target="__blank" href="mailto:rahul.pavi@outlook.com">
+                <MailIcon isDark={true} />
               </a>
             </li>
           </ul>

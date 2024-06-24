@@ -12,7 +12,7 @@ export default function ExpCard(props: ExpCardProps) {
     <>
       <div className="exp-card-container">
         <span className="exp-duration">
-          {exp.yearFrom} - {exp.yearTo}
+          {exp.dateFrom} - {exp.dateTo}
         </span>
         <div className="exp-desc">
           <h2>{exp.title}</h2>

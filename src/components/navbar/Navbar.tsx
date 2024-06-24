@@ -26,9 +26,6 @@ export default function NavBar() {
             <li className="nav-item">
               <a href="#projects">Projects</a>
             </li>
-            <li className="nav-item">
-              <a href="#contact">Contact</a>
-            </li>
           </ul>
         </div>
       </nav>

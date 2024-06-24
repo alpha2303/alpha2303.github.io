@@ -1,6 +1,6 @@
 export interface Experience {
-    yearFrom: number,
-    yearTo: number,
+    dateFrom: string,
+    dateTo: string,
     title: string,
     company: string,
     location: string,
@@ -9,8 +9,8 @@ export interface Experience {
 }
 
 export interface Education {
-    yearFrom: number,
-    yearTo: number,
+    dateFrom: string,
+    dateTo: string,
     title: string,
     institute: string,
     location: string,

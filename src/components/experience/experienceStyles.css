@@ -13,15 +13,15 @@
 }
 
 .exp-duration {
-    /* padding: 80px; */
     display: flex;
     align-items: center;
     flex-basis: 20%;
+    font-size: 70%;
+    font-weight: bold;
 }
 
 .exp-desc {
     padding: 20px;
-    /* background-color: red; */
     flex-basis: 80%;
 }
 
