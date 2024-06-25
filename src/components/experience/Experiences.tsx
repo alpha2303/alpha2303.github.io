@@ -1,9 +1,10 @@
 import { Experience } from "../../types/Data";
-import ExpCard from "./ExpCard";
+import ExpCard from "../wrappers/ExpCard";
 import { expArray } from "../../../content";
 import "./experienceStyles.css";
 
 export default function Experiences() {
+
   return (
     <>
       <div id="experiences" className="exp-container">

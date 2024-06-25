@@ -3,6 +3,7 @@ import NavBar from "./components/navbar/Navbar";
 import "./AppStyles.css";
 import Intro from "./components/intro/Intro";
 import Experiences from "./components/experience/Experiences";
+import Educations from "./components/education/Educations";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <div className="main-container">
           <About />
           <Experiences />
+          <Educations />
         </div>
       </div>
     </>

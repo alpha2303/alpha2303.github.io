@@ -1,12 +1,12 @@
-import { Experience } from "../../types/Data";
-import "./experienceStyles.css";
+import { Education } from "../../types/Data";
+import "./wrappersStyles.css";
 
-interface ExpCardProps {
-  experience: Experience;
+interface EduCardProps {
+  education: Education;
 }
 
-export default function ExpCard(props: ExpCardProps) {
-  const exp: Experience = props.experience;
+export default function EduCard(props: EduCardProps) {
+  const exp: Education = props.education;
 
   return (
     <>
@@ -17,11 +17,11 @@ export default function ExpCard(props: ExpCardProps) {
         <div className="exp-desc">
           <h2>{exp.title}</h2>
           <h3>
-            {exp.company} | {exp.location}
+            {exp.institute} | {exp.location}
           </h3>
-          <p>{exp.desc}</p>
+          <p>GPA: {exp.gpa} / {exp.maxGpa}</p>
           <ul className="exp-skill-list">
-            {exp.skills.map((skill: string) => (
+            {exp.relevantCourses.map((skill: string) => (
               <li className="exp-skill">{skill}</li>
             ))}
           </ul>
