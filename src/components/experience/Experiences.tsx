@@ -6,7 +6,7 @@ import CVCard from "../wrappers/CVCard";
 export default function Experiences() {
   return (
     <>
-      <div id="experiences" className="exp-container">
+      <div id="experience" className="exp-container">
         <section className="exp-section">
           <h3>Experience</h3>
           <div>

@@ -14,5 +14,16 @@
 body {
   /* background-color: rgb(3, 22, 48); */
   background-color: var(--base-bg-color);
-  color: var(--light-text)
+  color: var(--light-text);
+}
+
+@media only screen and (min-width: 800px) {
+  .body {
+      overflow: hidden;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
