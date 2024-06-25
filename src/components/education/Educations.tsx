@@ -12,13 +12,13 @@ export default function Educations() {
           <div>
             {eduArray.map((edu: Education, eduIndex: number) => (
               <CVCard
-              key={eduIndex}
-              duration={`${edu.dateFrom} - ${edu.dateTo}`}
-              title={edu.title}
-              subtitle={`${edu.institute} | ${edu.location}`}
-              desc={`GPA: ${edu.gpa} / ${edu.maxGpa}`}
-              descList={edu.relevantCourses}
-              url={edu.url}
+                key={eduIndex}
+                duration={`${edu.dateFrom} - ${edu.dateTo}`}
+                title={edu.title}
+                subtitle={`${edu.institute} | ${edu.location}`}
+                desc={`GPA: ${edu.gpa} / ${edu.maxGpa}`}
+                descList={edu.relevantCourses}
+                url={edu.url}
               />
             ))}
           </div>

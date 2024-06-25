@@ -1,29 +1,29 @@
 .container {
-    border: 2px dashed var(--accent-color);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    position: absolute;
+  border: 2px dashed var(--accent-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 
 @media only screen and (max-width: 720px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 720px) {
-    .main-container {
-        max-height: 100vh;
-    }
+  .main-container {
+    max-height: 100vh;
+  }
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: 70%;
-    overflow: auto;
-    scroll-behavior: smooth;
-    padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 70%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0px;
 }

@@ -4,6 +4,7 @@ import "./AppStyles.css";
 import Intro from "./components/intro/Intro";
 import Experiences from "./components/experience/Experiences";
 import Educations from "./components/education/Educations";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <About />
           <Experiences />
           <Educations />
+          <Footer />
         </div>
       </div>
     </>

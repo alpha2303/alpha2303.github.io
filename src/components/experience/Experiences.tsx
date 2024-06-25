@@ -12,13 +12,13 @@ export default function Experiences() {
           <div>
             {expArray.map((exp: Experience, expIndex: number) => (
               <CVCard
-              key={expIndex}
-              duration={`${exp.dateFrom} - ${exp.dateTo}`}
-              title={exp.title}
-              subtitle={`${exp.company} | ${exp.location}`}
-              desc={exp.desc}
-              descList={exp.skills}
-              url={exp.url}
+                key={expIndex}
+                duration={`${exp.dateFrom} - ${exp.dateTo}`}
+                title={exp.title}
+                subtitle={`${exp.company} | ${exp.location}`}
+                desc={exp.desc}
+                descList={exp.skills}
+                url={exp.url}
               />
             ))}
           </div>

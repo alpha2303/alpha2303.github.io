@@ -1,5 +1,5 @@
 interface IconProps {
-    isDark: boolean,
+  isDark: boolean;
 }
 
 export default IconProps;
