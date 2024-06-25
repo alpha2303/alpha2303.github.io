@@ -1,10 +1,12 @@
 .exp-card-container {
     display: flex;
+    border-radius: 5px;
 }
 
 .exp-duration {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-basis: 20%;
     font-size: 70%;
     font-weight: bold;
@@ -13,6 +15,19 @@
 .exp-desc {
     padding: 20px;
     flex-basis: 80%;
+    a {
+        text-decoration: none;
+        transition: transform 0.5s ease;
+        padding-bottom: 2px;
+        border-bottom: 2px dashed transparent;
+        color: inherit;
+        display: inline-block;
+    }
+
+    a:hover {
+        transform: translateX(10px);
+        border-bottom: 2px dashed;
+    }
 }
 
 .exp-skill-list {

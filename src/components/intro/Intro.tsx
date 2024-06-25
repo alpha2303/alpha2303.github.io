@@ -8,6 +8,9 @@ export default function About() {
     <>
       <div className="intro-container">
         <div className="intro-desc">
+          <div className="intro-pic">
+            <img src="src/assets/dp1_square.jpg" />
+          </div>
           <h1>Rahul Pavithran</h1>
           <h3>Senior Software Engineer</h3>
           <ul className="contact-list">

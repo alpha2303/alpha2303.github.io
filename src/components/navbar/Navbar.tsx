@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <>
       <div className="nav-toggler" onClick={() => setToggleNav(!toggleNav)}>
-        <span>{toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}</span>
+        {toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}
       </div>
       <nav className={`nav-sidebar ${toggleNav ? "active" : null}`}>
         <div className={`nav-panel`}>

@@ -10,13 +10,15 @@ export default function Experiences() {
         <section className="exp-section">
           <h3>Experience</h3>
           <div>
-            {expArray.map((exp: Experience) => (
+            {expArray.map((exp: Experience, expIndex: number) => (
               <CVCard
+              key={expIndex}
               duration={`${exp.dateFrom} - ${exp.dateTo}`}
               title={exp.title}
               subtitle={`${exp.company} | ${exp.location}`}
               desc={exp.desc}
               descList={exp.skills}
+              url={exp.url}
               />
             ))}
           </div>

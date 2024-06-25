@@ -1,9 +1,8 @@
 .intro-container {
   display: flex;
-  flex-basis: 20%;
+  flex-basis: 30%;
   align-items: center;
-  padding: 50px 50px;
-  position: sticky;
+  justify-content: center;
 }
 
 .intro-desc {
@@ -16,10 +15,32 @@
     margin: 0;
     padding: 10px 0px;
   }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+}
+
+.intro-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+  img {
+    width: 50%;
+    box-shadow: 10px 10px;
+    border-radius: 12px;
+    opacity: 75%;
+    filter: grayscale(10%);
+  }
 }
 
 .contact-list {
-  width: 100%;
+  width: 32vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,7 +49,13 @@
   list-style-type: none;
 
   li {
+    display: inline-block; /* Required for transition */
     width: 20%;
     height: 20%;
+    transition: transform 0.2s ease;
+  }
+
+  li:hover {
+    transform: translateY(-8px);
   }
 }

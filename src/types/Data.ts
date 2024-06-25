@@ -6,6 +6,7 @@ export interface Experience {
     location: string,
     desc: string,
     skills: Array<string>,
+    url: string,
 }
 
 export interface Education {
@@ -17,10 +18,12 @@ export interface Education {
     gpa: number,
     maxGpa: number,
     relevantCourses: Array<string>,
+    url: string,
 }
 
 export interface Project {
     title: string,
     desc: string,
     skills: Array<string>
+    url: string
 }

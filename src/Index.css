@@ -3,6 +3,7 @@
   --accent-color: rgb(3, 37, 48);/*rgb(22, 220, 223);*/
   --base-bg-color: rgb(243, 243, 223);
   --base-hover-color: rgb(16, 51, 97);
+  --base-hover-color-light: rgb(219, 219, 202);
 }
 @supports (font-variation-settings: normal) {
   :root {
