@@ -1,10 +1,9 @@
 import { Experience } from "../../types/Data";
-import ExpCard from "../wrappers/ExpCard";
 import { expArray } from "../../../content";
 import "./experienceStyles.css";
+import CVCard from "../wrappers/CVCard";
 
 export default function Experiences() {
-
   return (
     <>
       <div id="experiences" className="exp-container">
@@ -12,7 +11,13 @@ export default function Experiences() {
           <h3>Experience</h3>
           <div>
             {expArray.map((exp: Experience) => (
-              <ExpCard experience={exp} />
+              <CVCard
+              duration={`${exp.dateFrom} - ${exp.dateTo}`}
+              title={exp.title}
+              subtitle={`${exp.company} | ${exp.location}`}
+              desc={exp.desc}
+              descList={exp.skills}
+              />
             ))}
           </div>
         </section>

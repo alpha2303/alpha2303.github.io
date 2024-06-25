@@ -1,27 +1,29 @@
-import { Experience } from "../../types/Data";
 import "./wrappersStyles.css";
 
-interface ExpCardProps {
-  experience: Experience;
+interface CardProps {
+  duration: string,
+  title: string,
+  subtitle: string,
+  desc: string,
+  descList: Array<string>,
 }
 
-export default function ExpCard(props: ExpCardProps) {
-  const exp: Experience = props.experience;
+export default function EduCard(props: CardProps) {
 
   return (
     <>
       <div className="exp-card-container">
         <span className="exp-duration">
-          {exp.dateFrom} - {exp.dateTo}
+          {props.duration}
         </span>
         <div className="exp-desc">
-          <h2>{exp.title}</h2>
+          <h2>{props.title}</h2>
           <h3>
-            {exp.company} | {exp.location}
+            {props.subtitle}
           </h3>
-          <p>{exp.desc}</p>
+          <p>{props.desc}</p>
           <ul className="exp-skill-list">
-            {exp.skills.map((skill: string) => (
+            {props.descList.map((skill: string) => (
               <li className="exp-skill">{skill}</li>
             ))}
           </ul>

@@ -1,7 +1,7 @@
 import { Education } from "../../types/Data";
-import EduCard from "../wrappers/EduCard";
 import { eduArray } from "../../../content";
 import "./educationStyles.css";
+import CVCard from "../wrappers/CVCard";
 
 export default function Educations() {
   return (
@@ -10,8 +10,14 @@ export default function Educations() {
         <section className="edu-section">
           <h3>Education</h3>
           <div>
-            {eduArray.map((exp: Education) => (
-              <EduCard education={exp} />
+            {eduArray.map((edu: Education) => (
+              <CVCard
+              duration={`${edu.dateFrom} - ${edu.dateTo}`}
+              title={edu.title}
+              subtitle={`${edu.institute} | ${edu.location}`}
+              desc={`GPA: ${edu.gpa} / ${edu.maxGpa}`}
+              descList={edu.relevantCourses}
+              />
             ))}
           </div>
         </section>
