@@ -1,53 +1,59 @@
 .exp-card-container {
-    display: flex;
-    border-radius: 5px;
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .exp-card-container {
+    padding-top: 20px;
+    flex-direction: column;
+  }
 }
 
 .exp-duration {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 20%;
-    font-size: 70%;
-    font-weight: bold;
+  display: flex;
+  padding-right: 20px;
+  /* background-color: red; */
+  align-items: center;
+  flex-basis: 20%;
+  font-size: 70%;
+  font-weight: bold;
 }
 
 .exp-desc {
-    padding: 20px;
-    flex-basis: 80%;
-    h3 {
-        font-weight: 600;
-    }
+  flex-basis: 80%;
+  h3 {
+    font-weight: 600;
+  }
 
-    a {
-        text-decoration: none;
-        transition: transform 0.5s ease;
-        padding-bottom: 2px;
-        border-bottom: 2px dashed transparent;
-        color: inherit;
-        display: inline-block;
-    }
+  a {
+    text-decoration: none;
+    transition: transform 0.5s ease;
+    color: inherit;
+    display: inline-block;
+    line-height: 1.5em;
+  }
 
-    a:hover {
-        transform: translateX(10px);
-        border-bottom: 2px dashed;
-    }
+  a:hover {
+    transform: translateX(10px);
+    text-decoration: underline dashed var(--light-text) 2px;
+    text-underline-offset: 6px;
+  }
 }
 
 .exp-skill-list {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: flex-start;
-    padding-inline-start: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: flex-start;
+  padding-inline-start: 0px;
 }
 
 .exp-skill {
-    background-color: var(--accent-color);
-    color: var(--base-bg-color);
-    font-size: small;
-    padding: 5px 10px;
-    margin: 2px;
-    border-radius: 10px;
+  background-color: var(--accent-color);
+  color: var(--base-bg-color);
+  font-size: small;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 10px;
 }
