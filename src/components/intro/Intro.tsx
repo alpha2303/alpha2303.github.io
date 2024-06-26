@@ -10,31 +10,32 @@ export default function About() {
         <div className="intro-pic">
           <img src="src/assets/dp1_square.jpg" />
         </div>
-        <div>
-          <div className="intro-desc">
-            <h1>Rahul Pavithran</h1>
-            <h3>Senior Software Engineer</h3>
-            <ul className="contact-list">
-              <li>
-                <a
-                  target="__blank"
-                  href="https://www.linkedin.com/in/rahulpavithranglobal/"
-                >
-                  <LinkedInIcon isDark={true} />
-                </a>
-              </li>
-              <li>
-                <a target="__blank" href="https://github.com/alpha2303">
-                  <GithubIcon isDark={true} />
-                </a>
-              </li>
-              <li>
-                <a target="__blank" href="mailto:rahul.pavi@outlook.com">
-                  <MailIcon isDark={true} />
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="intro-desc">
+          <h1>Rahul Pavithran</h1>
+          <h3>Senior Software Engineer</h3>
+          <p>
+            I love building creative software solutions, currently exploring the beauty of Machine Learning.
+          </p>
+          <ul className="contact-list">
+            <li>
+              <a
+                target="__blank"
+                href="https://www.linkedin.com/in/rahulpavithranglobal/"
+              >
+                <LinkedInIcon isDark={true} />
+              </a>
+            </li>
+            <li>
+              <a target="__blank" href="https://github.com/alpha2303">
+                <GithubIcon isDark={true} />
+              </a>
+            </li>
+            <li>
+              <a target="__blank" href="mailto:rahul.pavi@outlook.com">
+                <MailIcon isDark={true} />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </>
