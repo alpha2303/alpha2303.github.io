@@ -4,15 +4,14 @@
 
 @media only screen and (max-width: 800px) {
   .exp-card-container {
-    padding-top: 20px;
+    margin-top: 20px;
     flex-direction: column;
   }
 }
 
 .exp-duration {
   display: flex;
-  padding-right: 20px;
-  /* background-color: red; */
+  margin-right: 20px;
   align-items: center;
   flex-basis: 20%;
   font-size: 70%;

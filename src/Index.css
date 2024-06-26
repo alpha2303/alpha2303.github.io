@@ -13,7 +13,6 @@
 }
 
 body {
-  /* background-color: rgb(3, 22, 48); */
   background-color: var(--base-bg-color);
   color: var(--light-text);
 }

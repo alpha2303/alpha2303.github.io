@@ -1,0 +1,9 @@
+.proj-container {
+  display: flex;
+  justify-content: center;
+}
+
+.proj-section {
+  flex-direction: column;
+  width: 75%;
+}
