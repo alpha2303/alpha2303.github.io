@@ -21,7 +21,12 @@
 .exp-desc {
   flex-basis: 80%;
   h3 {
+    font-size:medium;
     font-weight: 600;
+  }
+
+  p {
+    font-size: small;
   }
 
   a {
@@ -49,10 +54,11 @@
 }
 
 .exp-skill {
-  background-color: var(--accent-color);
-  color: var(--base-bg-color);
+  /* background-color: var(--accent-color); */
+  border: 2px solid var(--accent-color);
+  /* color: var(--base-bg-color); */
   font-size: small;
-  padding: 5px 10px;
+  padding: 5px 5px;
   margin: 2px;
   border-radius: 10px;
 }
