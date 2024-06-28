@@ -16,8 +16,6 @@
   visibility: hidden;
   position: fixed;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--base-bg-color);
   z-index: 1;
   max-height: 100vh;
@@ -28,6 +26,7 @@
 
 .nav-panel {
   height: 100%;
+  margin: 5px;
   display: flex;
   align-items: center;
   border: 2px dashed var(--accent-color);

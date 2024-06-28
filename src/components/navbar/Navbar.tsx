@@ -12,7 +12,7 @@ export default function NavBar() {
         {toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}
       </div>
       <nav className={`nav-sidebar ${toggleNav ? "active" : null}`}>
-        <div className={`nav-panel`}>
+        <div className="nav-panel">
           <ul className="nav-item-list">
             <li className="nav-item">
               <a href="#about">About</a>

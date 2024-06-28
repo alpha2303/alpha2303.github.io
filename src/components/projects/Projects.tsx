@@ -6,7 +6,7 @@ import CVCard from "../wrappers/CVCard";
 export default function Projects() {
   return (
     <>
-      <div id="project" className="proj-container">
+      <div id="projects" className="proj-container">
         <section className="proj-section">
           <h3>Projects</h3>
           <div>
