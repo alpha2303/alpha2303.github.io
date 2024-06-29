@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   padding: 20px 0px;
+  width: 80%;
 }
 
 .about-section {
   display: flex;
   flex-direction: column;
-  width: 75%;
 }

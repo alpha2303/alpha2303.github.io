@@ -23,9 +23,9 @@ export default function NavBar() {
             <li className="nav-item">
               <a href="#education">Education</a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a href="#projects">Projects</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>
