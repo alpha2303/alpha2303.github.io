@@ -52,7 +52,7 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   justify-content: flex-start;
   padding-inline-start: 0px;
 }
