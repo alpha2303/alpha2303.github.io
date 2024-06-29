@@ -45,7 +45,7 @@
 
 .nav-item {
   list-style-type: none;
-  color: var(--light-text);
+  color: var(--base-text-color);
   margin-right: 15px;
   padding: 12px 5px;
 
@@ -60,6 +60,6 @@
 
   a:hover {
     transform: translateX(5px);
-    background-color: var(--base-hover-color-light);
+    background-color: var(--base-hover-color);
   }
 }

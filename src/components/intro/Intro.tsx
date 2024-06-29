@@ -14,8 +14,16 @@ export default function About() {
           <h1>Rahul Pavithran</h1>
           <h3>Senior Software Engineer</h3>
           <p>
-            I love building creative software solutions, currently exploring the beauty of Machine Learning.
+            I love building creative software solutions, currently exploring the
+            beauty of Machine Learning.
           </p>
+          <a
+            className="intro-url"
+            href="src/assets/RahulP_Resume.pdf"
+            target="__blank"
+          >
+            <span>View Resume &#8594;</span>
+          </a>
           <ul className="contact-list">
             <li>
               <a

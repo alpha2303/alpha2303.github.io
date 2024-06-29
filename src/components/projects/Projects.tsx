@@ -1,5 +1,5 @@
 import { Project } from "../../types/Data";
-import { projArray } from "../../../content";
+import { projArray } from "../../assets/content";
 import "./projectStyles.css";
 import CVCard from "../wrappers/CVCard";
 

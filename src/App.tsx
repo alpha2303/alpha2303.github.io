@@ -5,7 +5,6 @@ import Intro from "./components/intro/Intro";
 import Experiences from "./components/experience/Experiences";
 import Educations from "./components/education/Educations";
 import Footer from "./components/footer/Footer";
-import Projects from "./components/projects/Projects";
 
 export default function App() {
   return (
@@ -17,7 +16,6 @@ export default function App() {
           <About />
           <Experiences />
           <Educations />
-          <Projects />
           <Footer />
         </div>
       </div>

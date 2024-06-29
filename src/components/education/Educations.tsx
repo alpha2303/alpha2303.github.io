@@ -1,5 +1,5 @@
 import { Education } from "../../types/Data";
-import { eduArray } from "../../../content";
+import { eduArray } from "../../assets/content";
 import "./educationStyles.css";
 import CVCard from "../wrappers/CVCard";
 

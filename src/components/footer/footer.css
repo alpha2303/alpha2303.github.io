@@ -2,5 +2,8 @@
   padding-top: 20px;
   p {
     font-size: small;
+    span {
+      color: var(--accent-color);
+    }
   }
 }
