@@ -3,7 +3,7 @@ import { Experience, Education } from "./types/Data";
 export const aboutSection: Array<string> = [
   "Welcome to my page!",
   "I'm Rahul Pavithran, a software engineer specializing in Machine Learning and Cloud Computing, currently based in New Jersey, USA. Prior to my educational relocation, I held the mantle of Senior Software Engineer at ValueLabs, where I dabbled in the mystic arts to build software that help empower businesses.",
-  "My journey started at the age of 15 with my first smartphone, the Android-based Moto E 1st Gen. Tinkering with it nurtured my interest in a software engineering career. Over the years, I've had the opportunity to work on various domains and technologies, from a core full stack experience to Blockchain dApps, Cloud, Containers, and eventually cementing myself in Machine Learning and Deep Learning applications, primarily in the field of Image Processing and Computer Vision.",
+  "My journey started at the age of 15 with my first smartphone, the Android-based Moto E 1st Gen, and inkering with it nurtured my interest in software engineering. Over the years, I've had the opportunity to work on various domains and technologies, branching out from a core full stack experience to Blockchain dApps, Cloud, Containers, and Machine Learning / Deep Learning applications.",
   "Currently, I'm exploring new opportunities in creating business solutions utilizing Machine Learning capabilities. At other times, I'm usually reading books, exploring Teyvat, or watching Japanese Anime (subtitled of course).",
 ];
 
