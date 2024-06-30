@@ -1,0 +1,13 @@
+.exp-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.exp-section {
+  flex-direction: column;
+  h3 {
+    text-decoration: underline dashed var(--base-text-color) 2px;
+    text-underline-offset: 3px;
+  }
+}

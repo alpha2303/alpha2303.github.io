@@ -1,0 +1,11 @@
+.icon-dark {
+  path {
+    fill: var(--base-text-color);
+  }
+}
+
+.icon-light {
+  path {
+    fill: var(--base-bg-color);
+  }
+}
