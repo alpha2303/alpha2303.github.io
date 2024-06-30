@@ -1,13 +1,15 @@
 import "./AboutStyles.css";
-import { about_section } from "../../assets/content";
+import { aboutSection } from "../../assets/content";
 
 export default function About() {
   return (
     <>
       <div id="about" className="about-container">
         <section className="about-section">
-          <h3>About Me</h3>
-          <p>{about_section}</p>
+          <h1>Hi There!</h1>
+          {aboutSection.map((paraText: string) => (
+            <p>{paraText}</p>
+          ))}
         </section>
       </div>
     </>
