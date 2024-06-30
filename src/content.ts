@@ -1,4 +1,4 @@
-import { Experience, Education } from "../types/Data";
+import { Experience, Education } from "./types/Data";
 
 export const aboutSection: Array<string> = [
   "Welcome to my page!",

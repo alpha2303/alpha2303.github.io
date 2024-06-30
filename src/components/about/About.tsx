@@ -1,5 +1,5 @@
 import "./AboutStyles.css";
-import { aboutSection } from "../../assets/content";
+import { aboutSection } from "../../content";
 
 export default function About() {
   return (
