@@ -1,5 +1,5 @@
 import { Experience } from "../../types/Data";
-import { expArray } from "../../assets/content";
+import { expArray } from "../../content";
 import "./experienceStyles.css";
 import CVCard from "../wrappers/CVCard";
 

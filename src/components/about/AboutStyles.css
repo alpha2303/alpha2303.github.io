@@ -1,11 +1,23 @@
 .about-container {
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
   width: 80%;
 }
 
 .about-section {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  margin: 20px 0px;
+
+  h1 {
+    color: var(--accent-color);
+  }
 }
+
+/* @media only screen and (min-width: 800px) {
+  .about-section {
+    height: 60vh;
+  }
+} */
