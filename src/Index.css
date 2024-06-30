@@ -1,0 +1,28 @@
+:root {
+  --base-text-color: #0c1844;
+  --accent-color: #c80036;
+  --base-bg-color: #fff5e1;
+  --base-hover-color: #f2e6cd;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Poppins", sans-serif;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+}
+
+body {
+  background-color: var(--base-bg-color);
+  color: var(--base-text-color);
+}
+
+@media only screen and (min-width: 800px) {
+  .body {
+    overflow: hidden;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
