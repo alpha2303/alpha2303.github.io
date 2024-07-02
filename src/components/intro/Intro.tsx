@@ -17,7 +17,7 @@ export default function About() {
             I love building creative software solutions, currently exploring the
             beauty of Machine Learning.
           </p>
-          <a className="intro-url" target="__blank" href="/RahulP_Resume.pdf">
+          <a className="intro-url" target="__blank" href="/Rahul_Pavithran___Resume.pdf">
             <span>View Resume &#8594;</span>
           </a>
           <ul className="contact-list">
