@@ -1,8 +1,9 @@
 :root {
-  --base-text-color: #0c1844;
-  --accent-color: #c80036;
-  --base-bg-color: #fff5e1;
-  --base-hover-color: #f2e6cd;
+  --base-text-color: #919491;
+  --accent-color: #ffdc8a;
+  --base-bg-color: #010d17;
+  --navbar-bg-color: #1d242c;
+  --base-hover-color: #edeef2;
 }
 @supports (font-variation-settings: normal) {
   :root {

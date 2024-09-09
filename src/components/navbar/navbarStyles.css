@@ -12,7 +12,7 @@
 
 .nav-sidebar {
   transform: translateX(-300px);
-  transition: transform 0.6s ease, visibility 1s;
+  transition: transform 0.6s ease-in, visibility 1s;
   visibility: hidden;
   position: fixed;
   display: flex;
@@ -54,11 +54,12 @@
     text-decoration: none;
     border-radius: 10px;
     display: inline-block; /* Required for transition */
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
   }
 
   a:hover {
-    transform: translateX(5px);
-    background-color: var(--base-hover-color);
+    transform: translateX(10px);
+    text-decoration: underline dashed var(--accent-color) 2px;
+    text-underline-offset: 6px;
   }
 }

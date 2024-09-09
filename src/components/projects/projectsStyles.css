@@ -7,7 +7,7 @@
 .proj-section {
   flex-direction: column;
   h3 {
-    text-decoration: underline dashed var(--base-text-color) 2px;
+    text-decoration: underline dashed var(--accent-color) 2px;
     text-underline-offset: 3px;
   }
 }
