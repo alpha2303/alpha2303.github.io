@@ -58,11 +58,11 @@
 }
 
 .exp-skill {
-  border: 2px solid var(--base-text-color);
   color: var(--accent-color);
+  background-color: var(--accent-color-comp);
   font-size: small;
   font-weight: 600;
-  padding: 5px 5px;
-  margin: 2px;
-  border-radius: 10px;
+  padding: 5px 8px;
+  margin: 3px 3px;
+  border-radius: 24px;
 }
