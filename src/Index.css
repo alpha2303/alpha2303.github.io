@@ -16,6 +16,7 @@
 body {
   background-color: var(--base-bg-color);
   color: var(--base-text-color);
+  margin: 0px;
 }
 
 ::-webkit-scrollbar {
