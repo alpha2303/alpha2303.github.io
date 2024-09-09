@@ -1,7 +1,6 @@
 .nav-toggler {
   padding: 10px 10px;
-  /* background-color: var(--accent-color); */
-  background-color: var(--base-text-color);
+  background-color: var(--accent-color);
   border-radius: 10px;
   width: 20px;
   height: 20px;
@@ -13,16 +12,16 @@
 
 .nav-sidebar {
   transform: translateX(-300px);
-  transition: transform 0.6s ease, visibility 1s;
+  transition: transform 0.6s ease-in, visibility 1s;
   visibility: hidden;
   position: fixed;
   display: flex;
-  background-color: var(--base-bg-color);
+  background-color: var(--navbar-bg-color);
   z-index: 1;
   max-height: 100vh;
   height: 100%;
   box-shadow: 5px 0px 5px rgb(8, 9, 9);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .nav-panel {
@@ -30,7 +29,6 @@
   margin: 5px;
   display: flex;
   align-items: center;
-  border: 2px dashed var(--accent-color);
   border-radius: 10px;
 }
 
@@ -56,11 +54,12 @@
     text-decoration: none;
     border-radius: 10px;
     display: inline-block; /* Required for transition */
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
   }
 
   a:hover {
-    transform: translateX(5px);
-    background-color: var(--base-hover-color);
+    transform: translateX(10px);
+    text-decoration: underline dashed var(--accent-color) 2px;
+    text-underline-offset: 6px;
   }
 }
