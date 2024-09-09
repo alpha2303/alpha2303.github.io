@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Navbar.css";
+import "./navbarStyles.css";
 import MenuIcon from "../../icons/MenuIcon";
 import CloseIcon from "../../icons/CloseIcon";
 
@@ -31,11 +31,4 @@ export default function NavBar() {
       </nav>
     </>
   );
-}
-
-{
-  /* <div>
-      
-      
-    </div> */
 }

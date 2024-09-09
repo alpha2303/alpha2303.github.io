@@ -1,6 +1,6 @@
 import { Education } from "../../types/Data";
 import { eduArray } from "../../content";
-import "./educationStyles.css";
+import "./educationsStyles.css";
 import CVCard from "../wrappers/CVCard";
 
 export default function Educations() {

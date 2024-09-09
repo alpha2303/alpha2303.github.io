@@ -32,9 +32,8 @@
 
   img {
     width: 50%;
-    box-shadow: 10px 10px;
-    border-radius: 12px;
-    opacity: 75%;
+    box-shadow: 10px 10px var(--accent-color);
+    border-radius: 8px;
   }
 }
 
@@ -70,6 +69,6 @@
 
 .intro-url:hover {
   transform: translateX(10px);
-  text-decoration: underline dashed var(--base-text-color) 2px;
+  text-decoration: underline dashed var(--accent-color) 2px;
   text-underline-offset: 6px;
 }
