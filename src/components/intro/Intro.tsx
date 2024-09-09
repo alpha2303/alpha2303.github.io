@@ -1,4 +1,4 @@
-import "./IntroStyles.css";
+import "./introStyles.css";
 import LinkedInIcon from "../../icons/LinkedInIcon";
 import GithubIcon from "../../icons/GithubIcon";
 import MailIcon from "../../icons/MailIcon";

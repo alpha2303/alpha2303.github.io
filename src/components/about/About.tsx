@@ -1,4 +1,4 @@
-import "./AboutStyles.css";
+import "./aboutStyles.css";
 import { aboutSection } from "../../content";
 
 export default function About() {
