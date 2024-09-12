@@ -33,11 +33,11 @@ export const expArray: Array<Experience> = [
     url: "https://www.valuelabs.com/",
   },
   {
-    dateFrom: "JUN 2022",
-    dateTo: "JAN 2023",
+    dateFrom: "JUN 2020",
+    dateTo: "MAY 2022",
     title: "Software Engineer",
     company: "ValueLabs",
-    location: "Hyderabad, India",
+    location: "Hyderabad, Telangana, India",
     skills: [
       "Python",
       "Tesseract",
