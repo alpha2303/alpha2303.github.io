@@ -30,7 +30,7 @@ export const expArray: Array<Experience> = [
       "Confluence",
     ],
     desc: "Bolstered engineering of critical fixes and documentation across the stack for cloud-based PHP/Magento2 E-commerce website of a prominent dessert brand. Synthesized Flask REST APIs and data migration scripts for AI-based tender aggregator portal hosted on AWS, automating data transfer from AirTable to MongoDB with 35% better efficiency.",
-    url: "https://www.valuelabs.com/",
+    url: "https://www.linkedin.com/company/valuelabs/",
   },
   {
     dateFrom: "JUN 2020",
@@ -59,7 +59,7 @@ export const expArray: Array<Experience> = [
       "Docker",
     ],
     desc: "Commanded E2E development of multiple Python-based applications for OCR and document processing. Worked with various cross-functional teams on a diverse set of technologies and niches, including Fullstack, Blockchain and Cloud services on Azure and AWS. Succesfully revived development activities of critical data management portal for an international humanitarian organization to profitability and reduced resource requirements by 50%.",
-    url: "https://www.valuelabs.com/",
+    url: "https://www.linkedin.com/company/valuelabs/",
   },
   {
     dateFrom: "DEC 2019",
@@ -80,7 +80,7 @@ export const expArray: Array<Experience> = [
       "MySQL",
     ],
     desc: "Strengthened core concepts of OOPS, SOLID Principles and gained understand of system design principles. Composed unit tests for ASP.NET MVC project in production, reducing development load and improving code coverage by 5%.",
-    url: "https://www.valuelabs.com/",
+    url: "https://www.linkedin.com/company/valuelabs/",
   },
   {
     dateFrom: "MAR 2019",
@@ -98,7 +98,7 @@ export const expArray: Array<Experience> = [
       "Data Visualization",
     ],
     desc: "Mentored over 150 students in Data Analysis, Data Preprocessing, Data Visualization and Machine Learning techniques on Jupyter notebook environment.",
-    url: "https://www.thesmartbridge.com/",
+    url: "https://www.linkedin.com/company/smartbridge-educational-services-pvt-ltd/",
   },
   {
     dateFrom: "DEC 2017",
@@ -116,7 +116,7 @@ export const expArray: Array<Experience> = [
       "GCP",
     ],
     desc: "Led development team and contributed to frontend development of ReactNative based routing application, harnessing Google's Directions API.",
-    url: "https://hasura.io/",
+    url: "https://www.linkedin.com/company/hasura/",
   },
 ];
 
