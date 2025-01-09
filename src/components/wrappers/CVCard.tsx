@@ -1,7 +1,7 @@
 import "./wrappersStyles.css";
 
 interface CardProps {
-  duration: string;
+  duration: string | null;
   title: string;
   subtitle: string;
   desc: string;

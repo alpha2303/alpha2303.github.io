@@ -5,6 +5,7 @@ import About from "./components/about/About";
 import Experiences from "./components/experience/Experiences";
 import Educations from "./components/education/Educations";
 import Footer from "./components/footer/Footer";
+import Projects from "./components/projects/Projects";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <div className="main-container">
           <About />
           <Experiences />
+          <Projects />
           <Educations />
           <Footer />
         </div>

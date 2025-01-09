@@ -23,6 +23,7 @@ export interface Education {
 
 export interface Project {
   title: string;
+  subtitle: string;
   desc: string;
   skills: Array<string>;
   url: string;
