@@ -1,13 +1,10 @@
 .proj-container {
   display: flex;
   justify-content: center;
-  width: 75%;
+  width: 80%;
 }
 
 .proj-section {
+  display: flex;
   flex-direction: column;
-  h3 {
-    text-decoration: underline dashed var(--accent-color) 2px;
-    text-underline-offset: 3px;
-  }
 }
