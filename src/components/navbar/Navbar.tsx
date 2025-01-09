@@ -21,11 +21,11 @@ export default function NavBar() {
               <a href="#experience">Experience</a>
             </li>
             <li className="nav-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="nav-item">
               <a href="#education">Education</a>
             </li>
-            {/* <li className="nav-item">
-              <a href="#projects">Projects</a>
-            </li> */}
           </ul>
         </div>
       </nav>

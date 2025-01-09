@@ -13,9 +13,9 @@ export default function Projects() {
             {projArray.map((proj: Project, projIndex: number) => (
               <CVCard
                 key={projIndex}
-                duration={""}
+                duration={null}
                 title={proj.title}
-                subtitle={""}
+                subtitle={proj.subtitle}
                 desc={proj.desc}
                 descList={proj.skills}
                 url={proj.url}

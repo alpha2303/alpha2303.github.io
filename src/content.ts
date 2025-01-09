@@ -1,4 +1,4 @@
-import { Experience, Education } from "./types/Data";
+import { Experience, Education, Project } from "./types/Data";
 
 export const aboutSection: Array<string> = [
   "Welcome to my page!",
@@ -28,8 +28,9 @@ export const expArray: Array<Experience> = [
       "Bitbucket",
       "Jira",
       "Confluence",
+      "New Relic",
     ],
-    desc: "Bolstered engineering of critical fixes and documentation across the stack for cloud-based PHP/Magento2 E-commerce website of a prominent dessert brand. Synthesized Flask REST APIs and data migration scripts for AI-based tender aggregator portal hosted on AWS, automating data transfer from AirTable to MongoDB with 35% better efficiency.",
+    desc: "Bolstered engineering of critical fixes and documentation across the stack for cloud-based PHP/Magento2 E-commerce website of a prominent dessert brand. Synthesized Flask REST APIs and data migration scripts for AI-based tender aggregator portal hosted on AWS, automating data transfer from AirTable to MongoDB with 28% increase in operational efficiency.",
     url: "https://www.linkedin.com/company/valuelabs/",
   },
   {
@@ -53,12 +54,12 @@ export const expArray: Array<Experience> = [
       "Jira",
       "Azure DevOps",
       "Angular",
-      "GitHub",
-      "Kubernetes (AKS)",
+      "GitHub Actions",
+      "Kubernetes",
       "CKAN",
       "Docker",
     ],
-    desc: "Commanded E2E development of multiple Python-based applications for OCR and document processing. Worked with various cross-functional teams on a diverse set of technologies and niches, including Fullstack, Blockchain and Cloud services on Azure and AWS. Succesfully revived development activities of critical data management portal for an international humanitarian organization to profitability and reduced resource requirements by 50%.",
+    desc: "Commanded E2E development of multiple Python-based applications for OCR and PDF data extraction. Worked with various cross-functional teams on a diverse set of technologies and niches, including Fullstack, Blockchain and Cloud services on Azure and AWS. Succesfully revived development activities of critical data management portal for an international humanitarian organization to profitability and reduced resource requirements by 48%.",
     url: "https://www.linkedin.com/company/valuelabs/",
   },
   {
@@ -72,8 +73,6 @@ export const expArray: Array<Experience> = [
       "C#",
       "HTML & CSS",
       "xUnit",
-      "Entity Framework",
-      "Linq",
       "JavaScript",
       "jQuery",
       "KnockoutJS",
@@ -94,10 +93,12 @@ export const expArray: Array<Experience> = [
       "Pandas",
       "Matplotlib",
       "ML",
-      "Jupyter Notebook",
+      "Jupyter Notebooks",
+      "Data Preprocessing",
       "Data Visualization",
+      "Machine Learning"
     ],
-    desc: "Mentored over 150 students in Data Analysis, Data Preprocessing, Data Visualization and Machine Learning techniques on Jupyter notebook environment.",
+    desc: "Mentored over 150 students in Data Analysis, Data Preprocessing, Data Visualization and Machine Learning techniques leveraging industry-standard tools and libraries.",
     url: "https://www.linkedin.com/company/smartbridge-educational-services-pvt-ltd/",
   },
   {
@@ -168,4 +169,47 @@ export const eduArray: Array<Education> = [
   },
 ];
 
-export const projArray = [];
+export const projArray: Array<Project> = [
+  {
+    title: "DiffStudio 3D Gallery",
+    subtitle: "View on GitHub \u2192",
+    desc: "Full-stack 3D Scene management service to showcase 3D Scene Reconstructions generated via Gaussian Splatting or Neural Radiance Fields (NeRFs). Contributing to development as a part of the DiffStudio team.",
+    skills: [
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "AWS",
+    ],
+    url: "https://github.com/naga-k/3D_Portfolio",
+  },
+  {
+    title: "mlinstruct",
+    subtitle: "View on GitHub \u2192",
+    desc: "Python module for managing ML model training instrances and generating plots for performance metrics developed during my Masters project coursework. Contains additional ML workflow features including early stopping and model checkpointing. This module successfully reduced my asset management and execution efforts by 58%.",
+    skills: [
+      "Python",
+      "Numpy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "Poetry",
+    ],
+    url: "https://github.com/alpha2303/mlinstruct/tree/dev",
+  },
+  {
+    title: "pass-man",
+    subtitle: "View on GitHub \u2192",
+    desc: "Terminal-based multi-vault password manager built in Golang for local storage of domain-based password profiles, secured with AES-256 GCM encryption sequence.",
+    skills: ["Golang", "crypto"],
+    url: "https://github.com/alpha2303/pass-man",
+  },
+  {
+    title: "Portfolio (2024 Remastered)",
+    subtitle: "View on GitHub \u2192",
+    desc: "Remastered edition of my portfolio page, built using React + TypeScript and pure CSS.",
+    skills: ["TypeScript", "React", "CSS", "Github Actions"],
+    url: "https://github.com/alpha2303/alpha2303.github.io",
+  },
+];
