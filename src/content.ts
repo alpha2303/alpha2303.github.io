@@ -2,9 +2,9 @@ import { Experience, Education, Project } from "./types/Data";
 
 export const aboutSection: Array<string> = [
   "Welcome to my page!",
-  "I'm Rahul Pavithran, a software engineer specializing in Machine Learning and Cloud Computing, currently based in New Jersey, USA. Prior to my educational relocation, I held the mantle of Senior Software Engineer at ValueLabs, where I dabbled in the mystic arts to build software that help empower organizations. I had received multiple in-house awards during my tenure for the high impact of my contributions to project delivery.",
-  "My journey started at the age of 15 with my first smartphone, the Android-based Moto E 1st Gen, and working on it with custom ROMs nurtured my interest in software engineering. Over the years, I've had the opportunity to work on various domains and technologies, branching out from a core full stack experience to Blockchain dApps, Cloud, Containers, and Machine Learning / Deep Learning applications.",
-  "Currently, I'm exploring new opportunities in creating business solutions utilizing Machine Learning capabilities. At other times, I'm usually reading books, exploring Teyvat, or watching Japanese Anime (subtitled of course).",
+  "I'm a software engineer specializing in Machine Learning and Cloud Computing, currently based in New Jersey, USA. I perviously held the mantle of Senior Software Engineer at ValueLabs, where I handled end to end development of software solutions that help empower organizations. I had received multiple in-house awards during my tenure for the high impact of my contributions to project delivery.",
+  "My journey started at the age of 15 with my first smartphone, the Moto E 1st Gen, and tinkering with its custom ROMs nurtured my interest in software. Over the years, I've had the opportunity to work on various domains and technologies, branching out from a core full stack experience to Blockchain, Cloud, and Machine Learning / Deep Learning applications.",
+  "Currently, I'm exploring new opportunities in creating business solutions through the integration of Machine Learning and the best of Software Engineering.",
 ];
 
 export const expArray: Array<Experience> = [
@@ -23,7 +23,7 @@ export const expArray: Array<Experience> = [
       "Gitlab",
       "AWS S3",
       "PHP",
-      "Magento2",
+      "Adobe Commerce",
       "JavaScript",
       "Bitbucket",
       "Jira",
@@ -96,7 +96,7 @@ export const expArray: Array<Experience> = [
       "Jupyter Notebooks",
       "Data Preprocessing",
       "Data Visualization",
-      "Machine Learning"
+      "Machine Learning",
     ],
     desc: "Mentored over 150 students in Data Analysis, Data Preprocessing, Data Visualization and Machine Learning techniques leveraging industry-standard tools and libraries.",
     url: "https://www.linkedin.com/company/smartbridge-educational-services-pvt-ltd/",
@@ -171,9 +171,9 @@ export const eduArray: Array<Education> = [
 
 export const projArray: Array<Project> = [
   {
-    title: "DiffStudio 3D Gallery",
+    title: "Gaussian Galleria",
     subtitle: "View on GitHub \u2192",
-    desc: "Full-stack 3D Scene management service to showcase 3D Scene Reconstructions generated via Gaussian Splatting or Neural Radiance Fields (NeRFs). Contributing to development as a part of the DiffStudio team.",
+    desc: "Full-stack 3D Scene Management Service to showcase 3D Scene Reconstructions generated via Gaussian Splatting or Neural Radiance Fields (NeRFs). Contributed code as a part of the DiffStudio team.",
     skills: [
       "TypeScript",
       "Next.js",
