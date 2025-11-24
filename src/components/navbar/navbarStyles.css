@@ -1,5 +1,6 @@
 .nav-sidebar {
     height: 100vh;
+    flex-basis: 10%;
     display: flex;
     background-color: var(--base-bg-color);
 }
@@ -13,9 +14,8 @@
 }
 
 .nav-item-container {
-    padding: 12px;
-    margin: 12px;
-    width: 15vw;
+    padding: 24px 0px;
+    width: 12vw;
 }
 
 .nav-item-list {
@@ -27,7 +27,8 @@
     width: inherit;
     display: flex;
     flex-direction: inherit;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    /*justify-content: space-around;*/
 }
 
 .nav-item {
@@ -65,9 +66,6 @@
         height: inherit;
         display: flex;
         flex-direction: row;
-    }
-
-    .nav-item-container {
-        width: 15vw;
+        font-size: 12px;
     }
 }
