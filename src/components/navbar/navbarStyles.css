@@ -1,65 +1,73 @@
-.nav-toggler {
-  padding: 10px 10px;
-  background-color: var(--accent-color);
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  margin: 12px;
-  cursor: pointer;
-  z-index: 2;
-  position: fixed;
-}
-
 .nav-sidebar {
-  transform: translateX(-300px);
-  transition: transform 0.6s ease-in, visibility 1s;
-  visibility: hidden;
-  position: fixed;
-  display: flex;
-  background-color: var(--navbar-bg-color);
-  z-index: 1;
-  max-height: 100vh;
-  height: 100%;
-  box-shadow: 5px 0px 5px rgb(8, 9, 9);
-  border-radius: 8px;
+    height: 100vh;
+    display: flex;
+    background-color: var(--base-bg-color);
 }
 
 .nav-panel {
-  height: 100%;
-  margin: 5px;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-sidebar.active {
-  transform: translateX(0px);
-  transition: transform 0.6s ease, visibility 1s;
-  visibility: visible;
+.nav-item-container {
+    padding: 12px;
+    margin: 12px;
+    width: 15vw;
 }
 
 .nav-item-list {
-  margin-right: 30px;
+    /* Disable ul styling */
+    padding-inline-start: 0;
+
+    /* Inherit parent size elements*/
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-around;
 }
 
 .nav-item {
-  list-style-type: none;
-  color: var(--base-text-color);
-  margin-right: 15px;
-  padding: 12px 5px;
+    list-style-type: none;
+    color: var(--base-text-color);
 
-  a {
-    padding: inherit;
-    color: inherit;
-    text-decoration: none;
-    border-radius: 10px;
-    display: inline-block; /* Required for transition */
-    transition: transform 0.5s ease;
-  }
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-radius: 10px;
+        display: inline-block;
+        transition: transform 0.5s ease;
+    }
 
-  a:hover {
-    transform: translateX(10px);
-    text-decoration: underline dashed var(--accent-color) 2px;
-    text-underline-offset: 6px;
-  }
+    a:hover {
+        transform: translateX(8px);
+        text-decoration: underline dashed var(--accent-color) 2px;
+        text-underline-offset: 6px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-sidebar {
+        height: fit-content;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-panel {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-item-container {
+        width: 15vw;
+    }
 }

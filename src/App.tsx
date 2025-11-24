@@ -10,7 +10,6 @@ import Projects from "./components/projects/Projects";
 export default function App() {
   return (
     <>
-      <NavBar />
       <div className="container">
         <Intro />
         <div className="main-container">
@@ -20,6 +19,7 @@ export default function App() {
           <Educations />
           <Footer />
         </div>
+        <NavBar />
       </div>
     </>
   );
