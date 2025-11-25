@@ -1,9 +1,15 @@
 .footer {
-  padding: 24px;
-  p {
-    font-size: small;
-    span {
-      color: var(--accent-color);
+    padding: 24px;
+    p {
+        font-size: small;
+        span {
+            color: var(--accent-color);
+        }
     }
-  }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        padding-bottom: 94px;
+    }
 }
