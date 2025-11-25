@@ -3,6 +3,7 @@
     flex-basis: 10%;
     display: flex;
     background-color: var(--base-bg-color);
+    justify-content: center;
 }
 
 .nav-panel {
@@ -14,8 +15,7 @@
 }
 
 .nav-item-container {
-    padding: 24px 0px;
-    width: 18vw;
+    padding: 24px 12px;
 }
 
 .nav-item-list {
