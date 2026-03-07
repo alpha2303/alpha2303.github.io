@@ -1,0 +1,34 @@
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--base-text-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark-mode-toggle__button:hover {
+  background-color: var(--accent-color-comp);
+  color: var(--accent-color);
+}
+
+.dark-mode-toggle__icon {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.dark-mode-toggle__icon svg {
+  width: 20px;
+  height: 20px;
+}
