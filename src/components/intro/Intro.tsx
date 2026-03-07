@@ -3,7 +3,7 @@ import LinkedInIcon from "../../icons/LinkedInIcon";
 import GithubIcon from "../../icons/GithubIcon";
 import MailIcon from "../../icons/MailIcon";
 
-export default function About() {
+export default function Intro() {
   return (
     <>
       <div className="intro-container">
