@@ -13,12 +13,19 @@ export default function NavBar() {
   return (
     <>
       {createPortal(
-        <div className="nav-toggler" onClick={() => setToggleNav(!toggleNav)} aria-label="Toggle menu">
+        <button
+          type="button"
+          className="nav-toggler"
+          onClick={() => setToggleNav(!toggleNav)}
+          aria-label="Toggle menu"
+          aria-expanded={toggleNav}
+          aria-controls="nav-sidebar"
+        >
           {toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}
-        </div>,
+        </button>,
         document.body
       )}
-      <nav className={`nav-sidebar ${toggleNav ? "active" : ""}`}>
+      <nav id="nav-sidebar" className={`nav-sidebar ${toggleNav ? "active" : ""}`}>
         <div className="nav-panel">
           <ul className="nav-item-list">
             <li className="nav-item">
