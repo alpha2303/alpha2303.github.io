@@ -1,26 +1,45 @@
+import { useState } from "react";
+import { createPortal } from "react-dom";
 import "./navbarStyles.css";
-
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
-];
+import MenuIcon from "../../icons/MenuIcon";
+import CloseIcon from "../../icons/CloseIcon";
+import DarkModeToggle from "./darkMode/DarkModeToggle";
 
 export default function NavBar() {
+  const [toggleNav, setToggleNav] = useState(false);
+
+  const closeSidebar = () => setToggleNav(false);
+
   return (
     <>
-      <nav className="nav-sidebar">
+      {createPortal(
+        <div className="nav-toggler" onClick={() => setToggleNav(!toggleNav)} aria-label="Toggle menu">
+          {toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}
+        </div>,
+        document.body
+      )}
+      <nav className={`nav-sidebar ${toggleNav ? "active" : ""}`}>
         <div className="nav-panel">
           <ul className="nav-item-list">
-            {navLinks.map((link) => (
-              <li className="nav-item" key={link.href}>
-                <div className="nav-item-container">
-                  <a href={link.href}>{link.label}</a>
-                </div>
-              </li>
-            ))}
+            <li className="nav-item">
+              <a href="#about" onClick={closeSidebar}>About</a>
+            </li>
+            <li className="nav-item">
+              <a href="#experience" onClick={closeSidebar}>Experience</a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects" onClick={closeSidebar}>Projects</a>
+            </li>
+            <li className="nav-item">
+              <a href="#education" onClick={closeSidebar}>Education</a>
+            </li>
+            <li className="nav-item">
+              <a href="/rpkr">Blog</a>
+            </li>
           </ul>
+          <div className="nav-panel__theme">
+            <DarkModeToggle />
+          </div>
         </div>
       </nav>
     </>

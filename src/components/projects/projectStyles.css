@@ -7,4 +7,18 @@
 .proj-section {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.proj-section h3 {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.proj-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }

@@ -8,9 +8,17 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 20px 0px;
+  margin: 0;
 
   h1 {
     color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 0;
   }
 }

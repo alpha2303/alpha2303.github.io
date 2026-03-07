@@ -1,11 +1,28 @@
-:root {
+/* Default theme: dark (no data-theme or data-theme="dark") */
+:root,
+[data-theme="dark"] {
   --base-text-color: #919491;
   --accent-color: #ffdc8a;
   --base-bg-color: #010d17;
   --navbar-bg-color: #1d242c;
   --base-hover-color: #edeef2;
-  --accent-color-comp: rgba(255, 220, 138, 0.1)
+  --accent-color-comp: rgba(255, 220, 138, 0.1);
+  --shadow-color: rgba(8, 9, 9, 0.8);
+  --card-bg-color: #071a28;
 }
+
+/* Light theme */
+[data-theme="light"] {
+  --base-text-color: #1a1a1a;
+  --accent-color: #b8860b;
+  --base-bg-color: #f5f5f5;
+  --navbar-bg-color: #e8e8e8;
+  --base-hover-color: #333333;
+  --accent-color-comp: rgba(184, 134, 11, 0.15);
+  --shadow-color: rgba(0, 0, 0, 0.12);
+  --card-bg-color: #ffffff;
+}
+
 @supports (font-variation-settings: normal) {
   :root {
     font-family: "Poppins", sans-serif;
@@ -16,7 +33,8 @@
 body {
   background-color: var(--base-bg-color);
   color: var(--base-text-color);
-  margin: 0px;
+  margin: 0;
+  line-height: 1.6;
 }
 
 ::-webkit-scrollbar {
