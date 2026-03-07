@@ -4,7 +4,14 @@ import App from "./App.tsx";
 import "./Index.css";
 
 // Apply saved theme before first paint to avoid flash (default: dark)
-const savedTheme = localStorage.getItem("theme");
+let savedTheme: string | null = null;
+try {
+  if (typeof window !== "undefined" && window.localStorage) {
+    savedTheme = window.localStorage.getItem("theme");
+  }
+} catch {
+  // Ignore storage errors and fall back to default theme
+}
 if (savedTheme === "light") {
   document.documentElement.setAttribute("data-theme", "light");
 }
