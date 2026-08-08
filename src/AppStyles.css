@@ -48,6 +48,11 @@
     max-height: 100vh;
     overflow: auto;
     scroll-behavior: smooth;
-    padding: 24px;
+    padding: var(--intro-top-offset, 24px) 24px 24px;
+    scrollbar-width: none;
+  }
+
+  .main-container::-webkit-scrollbar {
+    display: none;
   }
 }

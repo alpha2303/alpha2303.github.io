@@ -7,8 +7,11 @@ import Experiences from "./components/experience/Experiences";
 import Educations from "./components/education/Educations";
 import Footer from "./components/footer/Footer";
 import Projects from "./components/projects/Projects";
+import useMatchIntroOffset from "./hooks/useMatchIntroOffset";
 
 export default function App() {
+  useMatchIntroOffset();
+
   return (
     <>
       <a href="#main-content" className="skip-link">
