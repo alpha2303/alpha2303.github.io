@@ -72,7 +72,7 @@
     flex: 1;
     flex-direction: column;
     height: auto;
-    gap: 8px;
+    gap: 18px;
   }
 
   .nav-item {
