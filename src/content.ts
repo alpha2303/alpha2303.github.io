@@ -8,29 +8,33 @@ export const aboutFocusAreas: Array<string> = [
 
 export const aboutSection: Array<string> = [
   "I'm a software engineer specializing in Machine Learning and Cloud Computing, based out of Reston, VA. Formerly a Senior Software Engineer at ValueLabs, I led end-to-end delivery on projects that earned multiple in-house awards for impact.",
-  "My interest started at 15, tinkering with custom ROMs on a Moto E — since then I've worked across full-stack, blockchain, cloud, and ML/DL, and I'm currently exploring where machine learning and software engineering intersect for real business problems.",
+  "My tryst with tech began at 15, tinkering with custom ROMs on a Moto E — since then I've worked across full-stack, blockchain, cloud, and ML/DL, and I'm currently exploring where machine learning and software engineering intersect for real business problems.",
 ];
 
 export const expArray: Array<Experience> = [
   {
     dateFrom: "MAY 2025",
     dateTo: "~",
-    title: "Python / AWS Developer",
+    title: "Python / AWS Developer - DevSecOps",
     company: "Fannie Mae",
     location: "Reston, VA",
     skills: [
       "Python",
+      "TypeScript",
       "FastAPI",
       "Angular",
-      "Polars",
       "AWS",
       "boto3",
       "ZAP",
       "Bitbucket",
-      "TypeScript",
+      "Jenkins",
+      "GitLab",
       "Jira",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
     ],
-    desc: "Building scalable security solutions and supplements enhancing application security.",
+    desc: "Building scalable AI-based security solutions and supplements enhancing application security @ Fannie Mae.",
     url: "https://www.linkedin.com/company/fanniemae/",
   },
   {
