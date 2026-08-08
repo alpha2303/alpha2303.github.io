@@ -231,7 +231,7 @@ export const projArray: Array<Project> = [
     url: "https://github.com/alpha2303/pass-man",
   },
   {
-    title: "Portfolio (2024 Remastered)",
+    title: "My Portfolio",
     subtitle: "View on GitHub \u2192",
     desc: "Remastered edition of my portfolio page, built using React + TypeScript and pure CSS.",
     skills: ["TypeScript", "React", "CSS", "Github Actions"],
