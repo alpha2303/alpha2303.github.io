@@ -50,10 +50,5 @@
     overflow: auto;
     scroll-behavior: smooth;
     padding: var(--intro-top-offset, 24px) 24px 24px;
-    scrollbar-width: none;
-  }
-
-  .main-container::-webkit-scrollbar {
-    display: none;
   }
 }
