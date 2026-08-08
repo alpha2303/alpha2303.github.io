@@ -1,6 +1,5 @@
 .intro-container {
   display: flex;
-  flex-basis: 30%;
   margin-top: 20px;
   flex-direction: column;
   align-items: center;
@@ -10,7 +9,7 @@
 .intro-desc {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 90%;
 
   h1 {
     font-family: var(--font-display);
@@ -35,25 +34,29 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .intro-desc {
-    width: 90%;
-  }
-
-  .intro-pic img {
-    width: 70%;
-  }
-}
-
 .intro-pic {
   display: flex;
   justify-content: center;
   margin: 20px 0px;
 
   img {
-    width: 50%;
+    width: 70%;
     box-shadow: 10px 10px var(--accent-color);
     border-radius: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-container {
+    flex-basis: 30%;
+  }
+
+  .intro-desc {
+    width: 60%;
+  }
+
+  .intro-pic img {
+    width: 50%;
   }
 }
 

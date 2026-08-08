@@ -1,7 +1,13 @@
 .edu-container {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .edu-container {
+    width: 80%;
+  }
 }
 
 .edu-section {
