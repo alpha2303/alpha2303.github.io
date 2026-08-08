@@ -1,9 +1,14 @@
 import { Experience, Education, Project } from "./types/Data";
 
+export const aboutFocusAreas: Array<string> = [
+  "Machine Learning",
+  "Cloud Computing",
+  "Software Engineering",
+];
+
 export const aboutSection: Array<string> = [
-  "I'm a software engineer specializing in Machine Learning and Cloud Computing, currently based out of Reston VA, USA. Formerly a Senior Software Engineer at ValueLabs, I commanded end to end development of software solutions that help empower organizations. I had received multiple in-house awards during my tenure for the high impact of my contributions to project delivery.",
-  "My journey started at the age of 15 with my first smartphone, the Moto E 1st Gen, and tinkering with its custom ROMs nurtured my interest in software. Over the years, I've had the opportunity to work on various domains and technologies, branching out from a core full stack experience to Blockchain, Cloud, and Machine Learning / Deep Learning applications.",
-  "Currently, I'm exploring new opportunities in creating business solutions through the integration of Machine Learning and the best of Software Engineering.",
+  "I'm a software engineer specializing in Machine Learning and Cloud Computing, based out of Reston, VA. Formerly a Senior Software Engineer at ValueLabs, I led end-to-end delivery on projects that earned multiple in-house awards for impact.",
+  "My interest started at 15, tinkering with custom ROMs on a Moto E — since then I've worked across full-stack, blockchain, cloud, and ML/DL, and I'm currently exploring where machine learning and software engineering intersect for real business problems.",
 ];
 
 export const expArray: Array<Experience> = [

@@ -17,17 +17,33 @@
   margin: 0;
 
   h1 {
-    font-family: var(--font-display);
-    color: var(--accent-color);
+    color: var(--heading-color);
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.4;
     margin: 0 0 12px 0;
-    padding-bottom: 0.15em;
   }
 
   p {
     line-height: 1.6;
     margin: 0;
   }
+}
+
+.about-focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.about-focus-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted-text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 5px 12px;
 }

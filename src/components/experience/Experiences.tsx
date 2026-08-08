@@ -19,6 +19,7 @@ export default function Experiences() {
                 desc={exp.desc}
                 descList={exp.skills}
                 url={exp.url}
+                isCurrent={exp.dateTo === "~"}
               />
             ))}
           </div>
