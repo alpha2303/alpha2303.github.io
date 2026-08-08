@@ -22,8 +22,9 @@
   width: 100%;
   max-width: 900px;
   box-sizing: border-box;
-  padding: 24px 16px
-    calc(var(--bottom-nav-height) + env(safe-area-inset-bottom) + 24px);
+  padding: 24px max(24px, env(safe-area-inset-right))
+    calc(var(--bottom-nav-height) + env(safe-area-inset-bottom) + 24px)
+    max(24px, env(safe-area-inset-left));
   gap: 48px;
   margin: 0 auto;
 }
