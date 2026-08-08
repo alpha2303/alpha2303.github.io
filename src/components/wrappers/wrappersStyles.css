@@ -32,7 +32,9 @@
   color: var(--accent-color);
   font-size: 1.125rem;
   font-weight: 700;
+  line-height: 1.4;
   margin: 0 0 4px 0;
+  padding-bottom: 0.15em;
 }
 
 .exp-desc h3 {
@@ -102,7 +104,7 @@
 
   .exp-card-container.in-view {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 
   .exp-card-container.in-view:hover {
