@@ -1,7 +1,13 @@
 .edu-container {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .edu-container {
+    width: 80%;
+  }
 }
 
 .edu-section {
@@ -10,10 +16,11 @@
   gap: 16px;
 }
 
-.edu-section h3 {
-  color: var(--accent-color);
+.edu-section > h3 {
+  color: var(--heading-color);
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.4;
   margin: 0 0 8px 0;
 }
 

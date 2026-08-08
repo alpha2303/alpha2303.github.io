@@ -1,4 +1,5 @@
 import "./wrappersStyles.css";
+import useInView from "../../hooks/useInView";
 
 interface CardProps {
   duration: string | null;
@@ -7,13 +8,27 @@ interface CardProps {
   desc: string;
   descList: Array<string>;
   url: string;
+  isCurrent?: boolean;
 }
 
 export default function CVCard(props: CardProps) {
+  const [ref, isInView] = useInView<HTMLDivElement>();
+
   return (
     <>
-      <div className="exp-card-container">
-        <div className="exp-duration">{props.duration}</div>
+      <div
+        ref={ref}
+        className={`exp-card-container${isInView ? " in-view" : ""}`}
+      >
+        <div className="exp-duration">
+          {props.duration}
+          {props.isCurrent && (
+            <span className="exp-current-pill">
+              <span className="dot" aria-hidden="true" />
+              Current
+            </span>
+          )}
+        </div>
         <div className="exp-desc">
           <h2>{props.title}</h2>
           <h3>

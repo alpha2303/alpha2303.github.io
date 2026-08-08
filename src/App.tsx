@@ -6,20 +6,26 @@ import Experiences from "./components/experience/Experiences";
 import Educations from "./components/education/Educations";
 import Footer from "./components/footer/Footer";
 import Projects from "./components/projects/Projects";
+import useMatchIntroOffset from "./hooks/useMatchIntroOffset";
 
 export default function App() {
+  useMatchIntroOffset();
+
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
+      <NavBar />
       <div className="container">
         <Intro />
-        <div className="main-container">
+        <div id="main-content" className="main-container">
           <About />
           <Experiences />
           <Projects />
           <Educations />
           <Footer />
         </div>
-        <NavBar />
       </div>
     </>
   );

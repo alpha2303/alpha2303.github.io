@@ -2,6 +2,7 @@ import "./introStyles.css";
 import LinkedInIcon from "../../icons/LinkedInIcon";
 import GithubIcon from "../../icons/GithubIcon";
 import MailIcon from "../../icons/MailIcon";
+import BlogIcon from "../../icons/BlogIcon";
 
 export default function Intro() {
   return (
@@ -49,6 +50,16 @@ export default function Intro() {
                 href="mailto:rahul.pavi@outlook.com"
               >
                 <MailIcon isDark={true} />
+              </a>
+            </li>
+            <li className="contact-blog-icon">
+              <a
+                target="__blank"
+                rel="noopener noreferrer"
+                title="Blog Icon"
+                href="/rpkr"
+              >
+                <BlogIcon />
               </a>
             </li>
           </ul>
