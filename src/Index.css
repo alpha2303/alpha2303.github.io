@@ -13,6 +13,7 @@
   --accent-color-comp: rgba(255, 220, 138, 0.1);
   --shadow-color: rgba(8, 9, 9, 0.8);
   --card-bg-color: #071a28;
+  --toggle-bg-color: var(--rail-bg-color);
 }
 
 /* Light theme */
@@ -29,6 +30,7 @@
   --accent-color-comp: rgba(184, 134, 11, 0.15);
   --shadow-color: rgba(0, 0, 0, 0.12);
   --card-bg-color: #ffffff;
+  --toggle-bg-color: var(--surface-3);
 }
 
 :root {

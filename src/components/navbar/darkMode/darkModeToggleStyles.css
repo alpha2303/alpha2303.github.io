@@ -5,7 +5,7 @@
   z-index: 1001;
   display: flex;
   align-items: center;
-  background-color: var(--surface-3);
+  background-color: var(--toggle-bg-color);
   border-radius: 12px;
   box-shadow: 0 2px 8px var(--shadow-color);
 }
