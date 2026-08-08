@@ -1,6 +1,13 @@
 .dark-mode-toggle {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top) + 12px);
+  right: max(16px, env(safe-area-inset-right) + 12px);
+  z-index: 1001;
   display: flex;
   align-items: center;
+  background-color: var(--surface-3);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .dark-mode-toggle__button {
@@ -12,10 +19,10 @@
   min-height: 44px;
   background: transparent;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   color: var(--base-text-color);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color var(--motion-fast), color var(--motion-fast);
 }
 
 .dark-mode-toggle__button:hover {

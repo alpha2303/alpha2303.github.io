@@ -1,54 +1,71 @@
-import { useState } from "react";
-import { createPortal } from "react-dom";
+import { useEffect, useState } from "react";
 import "./navbarStyles.css";
-import MenuIcon from "../../icons/MenuIcon";
-import CloseIcon from "../../icons/CloseIcon";
-import DarkModeToggle from "./darkMode/DarkModeToggle";
+import AboutIcon from "../../icons/AboutIcon";
+import ExperienceIcon from "../../icons/ExperienceIcon";
+import ProjectsIcon from "../../icons/ProjectsIcon";
+import EducationIcon from "../../icons/EducationIcon";
+import BlogIcon from "../../icons/BlogIcon";
+import ChevronIcon from "../../icons/ChevronIcon";
+import useActiveSection from "../../hooks/useActiveSection";
+
+const NAV_COLLAPSED_KEY = "navCollapsed";
+
+const SECTION_IDS = ["about", "experience", "projects", "education"];
+
+const NAV_ITEMS = [
+  { id: "about", label: "About", href: "#about", Icon: AboutIcon },
+  { id: "experience", label: "Experience", href: "#experience", Icon: ExperienceIcon },
+  { id: "projects", label: "Projects", href: "#projects", Icon: ProjectsIcon },
+  { id: "education", label: "Education", href: "#education", Icon: EducationIcon },
+  { id: "blog", label: "Blog", href: "/rpkr", Icon: BlogIcon },
+];
+
+function getInitialCollapsed(): boolean {
+  if (typeof localStorage === "undefined") return false;
+  return localStorage.getItem(NAV_COLLAPSED_KEY) === "true";
+}
 
 export default function NavBar() {
-  const [toggleNav, setToggleNav] = useState(false);
+  const activeId = useActiveSection(SECTION_IDS);
+  const [collapsed, setCollapsed] = useState<boolean>(() => getInitialCollapsed());
 
-  const closeSidebar = () => setToggleNav(false);
+  useEffect(() => {
+    document.documentElement.setAttribute("data-nav", collapsed ? "collapsed" : "expanded");
+    localStorage.setItem(NAV_COLLAPSED_KEY, String(collapsed));
+  }, [collapsed]);
 
   return (
-    <>
-      {createPortal(
-        <button
-          type="button"
-          className="nav-toggler"
-          onClick={() => setToggleNav(!toggleNav)}
-          aria-label="Toggle menu"
-          aria-expanded={toggleNav}
-          aria-controls="nav-sidebar"
-        >
-          {toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}
-        </button>,
-        document.body
-      )}
-      <nav id="nav-sidebar" className={`nav-sidebar ${toggleNav ? "active" : ""}`}>
-        <div className="nav-panel">
-          <ul className="nav-item-list">
-            <li className="nav-item">
-              <a href="#about" onClick={closeSidebar}>About</a>
+    <nav className="nav-rail" aria-label="Primary">
+      <button
+        type="button"
+        className="nav-collapse-toggle"
+        onClick={() => setCollapsed((prev) => !prev)}
+        aria-label={collapsed ? "Expand navigation" : "Collapse navigation"}
+        aria-expanded={!collapsed}
+      >
+        <span className="nav-collapse-toggle__icon">
+          <ChevronIcon />
+        </span>
+      </button>
+      <ul className="nav-item-list">
+        {NAV_ITEMS.map((item) => {
+          const isActive = item.id === activeId;
+          return (
+            <li key={item.id} className="nav-item">
+              <a
+                href={item.href}
+                className={isActive ? "active" : ""}
+                aria-current={isActive ? "page" : undefined}
+              >
+                <span className="nav-item-icon">
+                  <item.Icon />
+                </span>
+                <span className="nav-item-label">{item.label}</span>
+              </a>
             </li>
-            <li className="nav-item">
-              <a href="#experience" onClick={closeSidebar}>Experience</a>
-            </li>
-            <li className="nav-item">
-              <a href="#projects" onClick={closeSidebar}>Projects</a>
-            </li>
-            <li className="nav-item">
-              <a href="#education" onClick={closeSidebar}>Education</a>
-            </li>
-            <li className="nav-item">
-              <a href="/rpkr">Blog</a>
-            </li>
-          </ul>
-          <div className="nav-panel__theme">
-            <DarkModeToggle />
-          </div>
-        </div>
-      </nav>
-    </>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }

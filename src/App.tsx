@@ -1,5 +1,6 @@
 import "./AppStyles.css";
 import NavBar from "./components/navbar/Navbar";
+import DarkModeToggle from "./components/navbar/darkMode/DarkModeToggle";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
 import Experiences from "./components/experience/Experiences";
@@ -10,16 +11,20 @@ import Projects from "./components/projects/Projects";
 export default function App() {
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
+      <NavBar />
+      <DarkModeToggle />
       <div className="container">
         <Intro />
-        <div className="main-container">
+        <div id="main-content" className="main-container">
           <About />
           <Experiences />
           <Projects />
           <Educations />
           <Footer />
         </div>
-        <NavBar />
       </div>
     </>
   );
