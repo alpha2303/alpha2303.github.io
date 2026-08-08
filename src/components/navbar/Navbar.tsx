@@ -4,7 +4,6 @@ import AboutIcon from "../../icons/AboutIcon";
 import ExperienceIcon from "../../icons/ExperienceIcon";
 import ProjectsIcon from "../../icons/ProjectsIcon";
 import EducationIcon from "../../icons/EducationIcon";
-import BlogIcon from "../../icons/BlogIcon";
 import ChevronIcon from "../../icons/ChevronIcon";
 import useActiveSection from "../../hooks/useActiveSection";
 
@@ -17,7 +16,6 @@ const NAV_ITEMS = [
   { id: "experience", label: "Experience", href: "#experience", Icon: ExperienceIcon },
   { id: "projects", label: "Projects", href: "#projects", Icon: ProjectsIcon },
   { id: "education", label: "Education", href: "#education", Icon: EducationIcon },
-  { id: "blog", label: "Blog", href: "/rpkr", Icon: BlogIcon },
 ];
 
 function getInitialCollapsed(): boolean {
