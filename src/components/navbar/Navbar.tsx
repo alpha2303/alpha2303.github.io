@@ -1,54 +1,45 @@
-import { useState } from "react";
-import { createPortal } from "react-dom";
 import "./navbarStyles.css";
-import MenuIcon from "../../icons/MenuIcon";
-import CloseIcon from "../../icons/CloseIcon";
+import AboutIcon from "../../icons/AboutIcon";
+import ExperienceIcon from "../../icons/ExperienceIcon";
+import ProjectsIcon from "../../icons/ProjectsIcon";
+import EducationIcon from "../../icons/EducationIcon";
+import useActiveSection from "../../hooks/useActiveSection";
 import DarkModeToggle from "./darkMode/DarkModeToggle";
 
-export default function NavBar() {
-  const [toggleNav, setToggleNav] = useState(false);
+const SECTION_IDS = ["about", "experience", "projects", "education"];
 
-  const closeSidebar = () => setToggleNav(false);
+const NAV_ITEMS = [
+  { id: "about", label: "About", href: "#about", Icon: AboutIcon },
+  { id: "experience", label: "Experience", href: "#experience", Icon: ExperienceIcon },
+  { id: "projects", label: "Projects", href: "#projects", Icon: ProjectsIcon },
+  { id: "education", label: "Education", href: "#education", Icon: EducationIcon },
+];
+
+export default function NavBar() {
+  const activeId = useActiveSection(SECTION_IDS);
 
   return (
-    <>
-      {createPortal(
-        <button
-          type="button"
-          className="nav-toggler"
-          onClick={() => setToggleNav(!toggleNav)}
-          aria-label="Toggle menu"
-          aria-expanded={toggleNav}
-          aria-controls="nav-sidebar"
-        >
-          {toggleNav ? <CloseIcon isDark={false} /> : <MenuIcon isDark={false} />}
-        </button>,
-        document.body
-      )}
-      <nav id="nav-sidebar" className={`nav-sidebar ${toggleNav ? "active" : ""}`}>
-        <div className="nav-panel">
-          <ul className="nav-item-list">
-            <li className="nav-item">
-              <a href="#about" onClick={closeSidebar}>About</a>
+    <nav className="nav-rail" aria-label="Primary">
+      <ul className="nav-item-list">
+        {NAV_ITEMS.map((item) => {
+          const isActive = item.id === activeId;
+          return (
+            <li key={item.id} className="nav-item">
+              <a
+                href={item.href}
+                className={isActive ? "active" : ""}
+                aria-current={isActive ? "page" : undefined}
+              >
+                <span className="nav-item-icon">
+                  <item.Icon />
+                </span>
+                <span className="nav-item-label">{item.label}</span>
+              </a>
             </li>
-            <li className="nav-item">
-              <a href="#experience" onClick={closeSidebar}>Experience</a>
-            </li>
-            <li className="nav-item">
-              <a href="#projects" onClick={closeSidebar}>Projects</a>
-            </li>
-            <li className="nav-item">
-              <a href="#education" onClick={closeSidebar}>Education</a>
-            </li>
-            <li className="nav-item">
-              <a href="/rpkr">Blog</a>
-            </li>
-          </ul>
-          <div className="nav-panel__theme">
-            <DarkModeToggle />
-          </div>
-        </div>
-      </nav>
-    </>
+          );
+        })}
+      </ul>
+      <DarkModeToggle />
+    </nav>
   );
 }

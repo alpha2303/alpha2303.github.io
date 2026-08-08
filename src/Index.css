@@ -2,30 +2,49 @@
 :root,
 [data-theme="dark"] {
   --base-text-color: #919491;
+  --muted-text-color: #6b6e6b;
+  --heading-color: #d9d9d0;
   --accent-color: #ffdc8a;
+  --accent-color-strong: #ffdc8a;
   --base-bg-color: #010d17;
-  --navbar-bg-color: #1d242c;
-  --base-hover-color: #edeef2;
+  --rail-bg-color: #0b1d2d;
+  --surface-3: #242c36;
+  --border-color: rgba(255, 255, 255, 0.08);
   --accent-color-comp: rgba(255, 220, 138, 0.1);
   --shadow-color: rgba(8, 9, 9, 0.8);
   --card-bg-color: #071a28;
+  --toggle-bg-color: var(--rail-bg-color);
 }
 
 /* Light theme */
 [data-theme="light"] {
   --base-text-color: #1a1a1a;
+  --muted-text-color: #5c5c5c;
+  --heading-color: #2b2620;
   --accent-color: #b8860b;
+  --accent-color-strong: #8a6508;
   --base-bg-color: #f5f5f5;
-  --navbar-bg-color: #e8e8e8;
-  --base-hover-color: #333333;
+  --rail-bg-color: #e8e8e8;
+  --surface-3: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.08);
   --accent-color-comp: rgba(184, 134, 11, 0.15);
   --shadow-color: rgba(0, 0, 0, 0.12);
   --card-bg-color: #ffffff;
+  --toggle-bg-color: var(--surface-3);
+}
+
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --rail-width-desktop: 104px;
+  --bottom-nav-height: 64px;
+  --motion-fast: 0.2s ease;
+  --motion-base: 0.3s ease;
 }
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-body);
     font-feature-settings: "liga" 1, "calt" 1;
   }
 }
@@ -38,6 +57,44 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 12px;
+  z-index: 10001;
+  background-color: var(--surface-3);
+  color: var(--base-text-color);
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  text-decoration: none;
+  transition: top var(--motion-fast);
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,18 +1,73 @@
 .exp-card-container {
+  position: relative;
   display: flex;
-  padding: 20px 24px;
+  flex-direction: column;
+  padding: 20px 24px 20px 27px;
   border-radius: 12px;
   background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
   box-shadow: 0 2px 8px var(--shadow-color);
+  overflow: hidden;
+  transition: transform var(--motion-fast), box-shadow var(--motion-fast);
+}
+
+.exp-card-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--accent-color);
+}
+
+.exp-card-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px var(--shadow-color);
 }
 
 .exp-duration {
   display: flex;
-  margin-right: 20px;
-  align-items: center;
-  flex-basis: 20%;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
   font-size: 70%;
   font-weight: bold;
+  color: var(--muted-text-color);
+}
+
+.exp-current-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.exp-current-pill .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .exp-current-pill .dot {
+    animation: exp-current-pulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes exp-current-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
 }
 
 .exp-desc {
@@ -20,13 +75,15 @@
 }
 
 .exp-desc h2 {
-  color: var(--accent-color);
+  color: var(--heading-color);
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.4;
   margin: 0 0 4px 0;
 }
 
 .exp-desc h3 {
+  color: var(--accent-color);
   font-size: 0.9375rem;
   font-weight: 600;
   margin: 0 0 8px 0;
@@ -62,7 +119,7 @@
 }
 
 .exp-skill {
-  color: var(--accent-color);
+  color: var(--accent-color-strong);
   background-color: var(--accent-color-comp);
   font-size: small;
   font-weight: 600;
@@ -71,9 +128,32 @@
   border-radius: 24px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .exp-card-container {
-    margin-top: 20px;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .exp-duration {
+    margin-right: 20px;
+    margin-bottom: 0;
+    flex-basis: 20%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .exp-card-container {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: transform 0.4s ease, box-shadow var(--motion-fast),
+      opacity 0.4s ease;
+  }
+
+  .exp-card-container.in-view {
+    opacity: 1;
+    transform: none;
+  }
+
+  .exp-card-container.in-view:hover {
+    transform: translateY(-3px);
   }
 }

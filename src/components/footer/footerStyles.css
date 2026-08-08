@@ -2,14 +2,9 @@
     padding: 24px;
     p {
         font-size: small;
+        color: var(--muted-text-color);
         span {
             color: var(--accent-color);
         }
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .footer {
-        padding-bottom: 94px;
     }
 }
