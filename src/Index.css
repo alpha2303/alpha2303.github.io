@@ -36,8 +36,7 @@
 :root {
   --font-body: "Inter", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
-  --rail-width-expanded: 260px;
-  --rail-width-collapsed: 76px;
+  --rail-width-desktop: 104px;
   --bottom-nav-height: 64px;
   --motion-fast: 0.2s ease;
   --motion-base: 0.3s ease;

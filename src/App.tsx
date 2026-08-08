@@ -1,6 +1,5 @@
 import "./AppStyles.css";
 import NavBar from "./components/navbar/Navbar";
-import DarkModeToggle from "./components/navbar/darkMode/DarkModeToggle";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
 import Experiences from "./components/experience/Experiences";
@@ -18,7 +17,6 @@ export default function App() {
         Skip to content
       </a>
       <NavBar />
-      <DarkModeToggle />
       <div className="container">
         <Intro />
         <div id="main-content" className="main-container">

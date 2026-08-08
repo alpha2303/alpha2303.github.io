@@ -31,11 +31,7 @@
 
 @media only screen and (min-width: 768px) {
   :root {
-    --rail-width: var(--rail-width-expanded);
-  }
-
-  [data-nav="collapsed"] {
-    --rail-width: var(--rail-width-collapsed);
+    --rail-width: var(--rail-width-desktop);
   }
 
   .container {
